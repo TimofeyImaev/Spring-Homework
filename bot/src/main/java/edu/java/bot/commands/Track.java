@@ -3,10 +3,9 @@ package edu.java.bot.commands;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
 import edu.java.bot.URLParser;
+import java.net.URI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.net.URI;
 
 public class Track implements Command {
     private final static Logger LOGGER = LogManager.getLogger();

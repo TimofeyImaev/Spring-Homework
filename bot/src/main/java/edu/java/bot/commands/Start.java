@@ -5,7 +5,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Start implements Command{
+public class Start implements Command {
     private final static Logger LOGGER = LogManager.getLogger();
 
     @Override

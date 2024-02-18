@@ -3,12 +3,13 @@ package edu.java.bot.commands;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
 import edu.java.bot.URLParser;
+import java.net.URI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.net.URI;
 
-public class Untrack implements Command{
+public class Untrack implements Command {
     private final static Logger LOGGER = LogManager.getLogger();
+
     @Override
     public String command() {
         return "/untrack";

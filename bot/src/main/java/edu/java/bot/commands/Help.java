@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Help implements Command {
     private final static Logger LOGGER = LogManager.getLogger();
+
     @Override
     public String command() {
         return "/help";

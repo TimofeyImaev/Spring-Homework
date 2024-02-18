@@ -6,8 +6,7 @@ public enum AvailableCommands {
     START(new Start()),
     LIST(new ListOfLinks()),
     TRACK(new Track()),
-    UNTRACK(new Untrack()),
-    ;
+    UNTRACK(new Untrack());
 
     private final Command command;
 

@@ -5,8 +5,8 @@ import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
 import edu.java.bot.commands.AvailableCommands;
-import org.springframework.stereotype.Component;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 @Component
 public class UpdateTrackerBot implements Bot {
@@ -23,9 +23,9 @@ public class UpdateTrackerBot implements Bot {
             String request = update.message().text();
             SendMessage sendMessage = null;
 
-            for (var Command : AvailableCommands.values()) {
-                if (Command.getCommand().command().equals(request.split(" ")[0])) {
-                    sendMessage = Command.getCommand().handle(update);
+            for (var command : AvailableCommands.values()) {
+                if (command.getCommand().command().equals(request.split(" ")[0])) {
+                    sendMessage = command.getCommand().handle(update);
                 }
             }
 
